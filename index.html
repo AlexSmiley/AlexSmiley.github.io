@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AlexSmiley — GitHub Project Portfolio</title>
+<meta name="description" content="Software engineering portfolio: backend, artificial intelligence, computer vision, 3D rendering and data structures projects.">
+<style>
+:root{color-scheme:light;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:#17233d;background:#f5f7fb}*{box-sizing:border-box}body{margin:0}main{max-width:1160px;margin:auto;padding:36px 24px 70px}.hero{background:linear-gradient(115deg,#15264a,#365a9f);color:white;padding:46px 42px;border-radius:22px}.hero h1{font-size:clamp(30px,5vw,46px);margin:0 0 12px}.hero p{max-width:690px;line-height:1.6;color:#e2ebff}.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.links a{border:1px solid #a8bcdf;padding:11px 18px;border-radius:10px;color:white;text-decoration:none;font-weight:600}.links a:hover{background:#ffffff18}.stats{display:flex;gap:14px;flex-wrap:wrap;margin:26px 0 36px}.stat{background:white;border:1px solid #e0e6f0;padding:16px 25px;border-radius:12px;min-width:150px}.stat strong{display:block;font-size:27px}.stat span{font-size:13px;color:#64748b}h2{font-size:26px;margin:40px 0 12px}.intro{color:#64748b;line-height:1.6}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:17px}.card{background:white;border:1px solid #e0e6f0;border-radius:15px;padding:21px;display:flex;flex-direction:column;min-height:204px;box-shadow:0 3px 14px #102b5010}.card.featured{border-color:#8eafe9}.card h3{font-size:19px;margin:0 0 10px}.card h3 a{color:#1d3d77;text-decoration:none}.card p{font-size:14px;line-height:1.65;color:#526179;flex:1;margin:0 0 16px}.actions{display:flex;gap:14px;flex-wrap:wrap}.actions a{font-size:13px;color:#1857b4;font-weight:700;text-decoration:none}.actions a:hover{text-decoration:underline}.tag{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#507bb5;font-weight:700;margin-bottom:11px}.foot{color:#78869b;font-size:13px;text-align:center;margin-top:46px}@media(max-width:600px){main{padding:16px 14px 36px}.hero{padding:28px 22px}.stat{flex:1;min-width:120px}}@media print{body{background:white}.card{break-inside:avoid;box-shadow:none}.hero{background:#15264a!important;print-color-adjust:exact}}
+</style></head>
+<body><main><header class="hero"><h1>Software Engineering Portfolio</h1><p>AlexSmiley · Java, Python, Full-Stack Development, Artificial Intelligence, Computer Vision, 3D Graphics and Algorithms. Explore my open-source projects and live demos.</p><nav class="links"><a href="https://github.com/AlexSmiley" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a><a href="https://www.linkedin.com/in/aleksandar-pavleski/" target="_blank" rel="noopener noreferrer">LinkedIn Profile ↗</a></nav></header>
+<section class="stats"><div class="stat"><strong>22</strong><span>GitHub projects</span></div><div class="stat"><strong>12</strong><span>Vercel demos documented</span></div><div class="stat"><strong>10</strong><span>Additional repositories</span></div></section>
+<h2>Featured Projects</h2><p class="intro">Selected projects in preferred order. Demo links may require a separately configured backend or worker.</p><div class="grid" id="featured"></div>
+<h2>More Projects with Web Demos</h2><div class="grid" id="demos"></div>
+<h2>Additional GitHub Projects</h2><div class="grid" id="additional"></div>
+<footer class="foot">© 2026 · AlexSmiley · <a href="https://github.com/AlexSmiley">GitHub</a> · <a href="https://www.linkedin.com/in/aleksandar-pavleski/">LinkedIn</a></footer></main>
+<script>
+const featured=[
+["Audio Recognition","Audio-recognition","Deep-learning musical instrument classifier using Python and audio signal analysis. Identifies piano, trumpet, xylophone, drums and violin.","https://audio-recognition-acme-fdd1.vercel.app/"],
+["React Native Gaussian Splat Viewer","react-native-gaussian-splat-viewer","3D Gaussian Splat viewer built with React Native, Expo and Three.js, supporting PLY model selection and browser preview.","https://react-native-gaussian-splat-viewer.vercel.app/"],
+["Suburbia","Suburbia","Australian suburb and postcode lookup application with Java Spring Boot, Node.js and React implementations.","https://suburbia-eta.vercel.app/"],
+["Chase The Game","ChaseTheGame","Multiplayer 3D chase game originally built with Java/JOGL and extended with a WebGL browser edition.","https://chasethegame-webgl.vercel.app/"],
+["Stadium","stadium","3D football stadium visualization originally built with C/OpenGL and modernized for the browser using WebGL.","https://stadium-webgl.vercel.app/"],
+["RoboL Compiler","compiler","Educational compiler for a Macedonian-keyword programming language, with a robot-world simulator and Node.js frontend.","https://compiler-iota-mauve.vercel.app/"]];
+const demos=[
+["Highcharts","highcharts","Data visualization examples combining JavaFX chart samples with a modern web dashboard.","https://highcharts-rust.vercel.app/"],
+["Bus Station Management","bus_station","Bus station management system for routes, schedules and ticketing, modernized from a Java desktop application.","https://bus-station-seven.vercel.app/"],
+["Web Scrapers","scrapers","Python scraping tools for property, automotive and classified listings, with a React dashboard.","https://scrapers-phi.vercel.app/"],
+["Unicode AVL Trie","unicode-avl-trie","Unicode dictionary implementation in C combining trie traversal with AVL-balanced character branches.","https://unicode-avl-trie-web.vercel.app/"],
+["Keras Gaussian Splatting","keras-gaussian-splatting","Experimental TensorFlow/Keras 3D scene reconstruction from images or videos, including YouTube inputs. Requires a configured worker.","https://keras-gaussian-splatting.vercel.app/"],
+["StreetSplat AI","streetsplat-ai","3D scene reconstruction prototype using authorized street imagery and Google Maps location metadata. Requires an external backend.","https://streetsplat-ai-acme-fdd1.vercel.app/"]];
+const additional=[
+["DashSplat","dashsplat","Transforms multi-camera driving footage into reconstructed 3D driving environments using Gaussian splatting and generative rendering."],
+["DopplerTrack","dopplertrack","Acoustic geolocation research analyzing aircraft propeller Doppler signatures and flight data."],
+["SkyTrace","skytrace-doppler-geolocation","Interactive acoustic geolocation research workstation combining Doppler signal processing and ADS-B trajectories."],
+["DISOMAT Tersus","disomat-tersus","Industrial weighing application using C#/.NET, Windows Forms and TCP/IP hardware integration."],
+["BeamNG.Earth","BeamNG.Earth","Real-world terrain streaming for BeamNG.drive using elevation data, satellite imagery and level-of-detail rendering."],
+["C Dictionary","c-dictionary","Custom C-language dictionary focused on word storage, lookup and efficient data structures."],
+["Produce-Consume","produce-consume","Java messaging demonstration with Apache Camel and JMS producer-consumer patterns."],
+["English Words","english-words","Large English-language word list for dictionaries, spell checking, autocomplete and NLP."],
+["English Dictionary Dataset","english-dictionary-dataset","English vocabulary collection supporting text, JSON and trie-oriented dictionary applications."],
+["Wordlist","wordlist","English Speller Database resources for spell-checking and dictionary processing."]];
+function render(items,id,featuredFlag=false){const host=document.getElementById(id);for(const [name,repo,desc,demo] of items){const card=document.createElement("article");card.className="card"+(featuredFlag?" featured":"");const tag=featuredFlag?'<div class="tag">Featured project</div>':"";card.innerHTML=tag+'<h3><a href="https://github.com/AlexSmiley/'+encodeURIComponent(repo)+'" target="_blank" rel="noopener noreferrer"></a></h3><p></p><div class="actions"><a href="https://github.com/AlexSmiley/'+encodeURIComponent(repo)+'" target="_blank" rel="noopener noreferrer">View repository ↗</a></div>';card.querySelector("h3 a").textContent=name;card.querySelector("p").textContent=desc;if(demo){let a=document.createElement("a");a.href=demo;a.target="_blank";a.rel="noopener noreferrer";a.textContent="Open Vercel demo ↗";card.querySelector(".actions").append(a)}host.append(card)}}
+render(featured,"featured",true);render(demos,"demos");render(additional,"additional");
+</script></body></html>
